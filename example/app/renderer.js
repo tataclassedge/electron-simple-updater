@@ -6,6 +6,7 @@
 const { remote } = require('electron');
 
 const updater = remote.require('electron-simple-updater');
+console.log('TCE: updater', updater);
 
 setText('version', updater.version);
 setText('build', updater.buildId);

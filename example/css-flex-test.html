@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex {
+            width: 80%;
+            margin: 1em auto;
+            height: 25px;
+            display: flex;
+            background: rebeccapurple;
+        }
+
+        .child {
+            flex-basis: auto;
+            /* default */
+            background: plum;
+        }
+
+        .value {
+            flex-basis: 25%;
+        }
+
+        .grow {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="child auto">Some Content</div>
+    </div>
+    <div class="flex">
+        <div class="child value">Some </div>
+    </div>
+    <div class="flex">
+        <div class="child grow">Some Content</div>
+    </div>
+</body>
+
+</html>

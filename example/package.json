@@ -8,6 +8,7 @@
     "postinstall": "install-app-deps",
     "start": "electron .",
     "dist": "build",
+    "dist:ele": "electron-builder",
     "publish": "publish",
     "release": "npm run dist && npm run publish"
   },
@@ -16,9 +17,6 @@
   "private": true,
   "build": {
     "appId": "megahertz.electron-simple-updater-example",
-    "appImage": {
-      "systemIntegration": "doNotAsk"
-    },
     "files": [
       "!publisher.json",
       "!README.md",
@@ -52,8 +50,9 @@
   },
   "devDependencies": {
     "electron": "*",
-    "electron-builder": "*",
-    "electron-simple-publisher": "*",
-    "electron-builder-squirrel-windows": "*"
+    "electron-builder": "^21.2.0",
+    "electron-builder-squirrel-windows": "*",
+    "electron-rebuild": "^1.8.8",
+    "electron-simple-publisher": "*"
   }
 }
